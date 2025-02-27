@@ -1,7 +1,7 @@
 name: Practicing
 
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       no1:
         description: 'Provide the first number'
