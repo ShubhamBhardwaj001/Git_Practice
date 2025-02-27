@@ -1,0 +1,24 @@
+name: Practicing
+
+on:
+  workflow_call:
+    inputs:
+      no1:
+        description: 'Provide the first number'
+        type: number
+      no2:
+        description: 'Provide the second number'
+        type: number
+
+jobs:
+  add_numbers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Add numbers
+        id: add_numbers
+        run: |
+          result=$((${{ inputs.no1 }} + ${{ inputs.no2 }}))
+          echo "The result of adding ${{ inputs.no1 }} and ${{ inputs.no2 }} is: $result"
