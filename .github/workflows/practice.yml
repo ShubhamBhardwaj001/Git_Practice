@@ -22,3 +22,6 @@ jobs:
         run: |
           result=$((${{ inputs.no1 }} + ${{ inputs.no2 }}))
           echo "The result of adding ${{ inputs.no1 }} and ${{ inputs.no2 }} is: $result"
+
+      - name: subtract a number
+        run: echo "$((${{inputs.no1}}- ${{inputs.no2}}))"
