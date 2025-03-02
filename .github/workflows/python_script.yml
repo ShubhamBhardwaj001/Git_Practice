@@ -1,0 +1,24 @@
+name: check even or odd
+
+on: 
+  workflow_dispatch:
+    inputs:
+      number:
+        required: true
+        default: 0
+jobs:
+  even-or-odd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: evenorodd
+        run: |
+          number = ${{input.number}}
+          if [ $((number % 2)) -eq 0 ]; then
+            echo "$number is even."
+          else
+            echo "$number is odd."
+          fi
+        
+  
