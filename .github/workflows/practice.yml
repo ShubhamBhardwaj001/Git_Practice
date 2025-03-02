@@ -27,5 +27,5 @@ jobs:
       - name: multiply numbers
         run: |
           result= $(({{input.no1}}*{{input.no2}}))
-          echp "The result of multiplying two number is: $result"
+          echo "The result of multiplying two number is: $result"
           
