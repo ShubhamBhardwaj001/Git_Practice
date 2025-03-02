@@ -1,9 +1,7 @@
 name: hello world print
 
-on:
-  push:
-    branches:
-      - main
+on: workflow_dispatch
+  
 
 jobs:
   say-hello:
