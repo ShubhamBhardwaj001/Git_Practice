@@ -1,0 +1,13 @@
+name: main branch push
+on:  
+  push:
+    branches:
+      - main
+jobs:
+  pushit:
+    runs-on: ubuntu_latest
+    steps:
+    - name: push
+      run: echo "Hello bro"
+
+      
