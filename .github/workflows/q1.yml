@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu_latest
     steps:
     - name: push
-      run: echo "Hello bro"
+      run: echo "Hello bro "
 
       
