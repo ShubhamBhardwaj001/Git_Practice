@@ -1,5 +1,5 @@
 name: main branch push
-on:  
+//on:  
   push:
     branches:
       - main
