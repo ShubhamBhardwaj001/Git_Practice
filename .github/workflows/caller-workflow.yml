@@ -1,0 +1,6 @@
+name: caller workflow
+on:
+  workflow_call:
+jobs:
+  workflow-caller:
+    uses: ./.github/workflows/reusable-workflow.yml
